@@ -1,0 +1,1739 @@
+@import "reset.less";
+@import "variables.less";
+
+
+
+
+// START CUSTOM CSS
+
+
+
+// BASICS
+
+
+html {
+
+	margin-top: 0;
+	top:0;
+	position: relative;
+	font-size: 62.5%;
+	background-color: darken(white,15%);
+
+
+
+}
+
+body {
+
+
+	.mainType();
+	font-size: 16px;
+	font-size: 1.6rem;
+	height: 100%;
+	min-height: 100%;
+
+}
+
+
+
+
+
+
+h1 {
+	font-size: 3.2rem;
+	letter-spacing: 0.26rem;
+}
+
+p {
+	font-size: 2rem;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.panel {
+	.borderBox;
+	width:100%;
+	height:100%;
+	margin-top:0;
+	top:0;
+	position: relative;
+	padding-top: 20px;
+}
+
+
+.card {
+//	text-shadow:0px 1px 0px #fff, 0px -1px 0px rgba(255,255,255,0.1);
+	text-align: center;
+	width: 26rem;
+	height: 36rem;
+	position: relative;
+	left:50%;
+	margin-left: -13rem;
+	margin-bottom: 4rem;
+	background-color: #fff;
+	.borderBox;
+	.boxShadow(0 0 15px rgba(0, 0, 0, 0.28));
+}
+
+
+.viss {
+	display: none;
+}
+
+
+.logoBox {
+	position: relative;
+	text-align: center;
+	height: 13rem;
+	padding-top: 2.5em;
+	
+	img {
+		position: absolute;
+		left: 50%;
+		margin-left: -2.5em;
+	}
+	.qr {
+margin-top: 0.3em;
+margin-left: -2.25em;
+
+}
+
+}
+
+.circles {
+	background-color: @baseColor;
+	width: 5em;
+	height: 5em;
+	position: absolute;
+	left: 50%;
+	margin-left: -2.5em;
+	border-radius: 50%;
+}
+
+.aboutCard .circles {	background-color: @altColor1;	}
+.aboutCard .circleIco:after  {	content: "\002d"; .iconType(); display:block; line-height:2em; font-size:2em; width:2em; height:2em; top:50%; left:50%; margin: -1em 0 0 -1em; position:absolute;	}
+
+
+.doCard .circles    {	background-color: @altColor2;	}
+.doCard .circleIco:after  {	content: "\0031"; .iconType(); display:block; line-height:2em; font-size:2em; width:2em; height:2em; top:50%; left:50%; margin: -1em 0 0 -1em; position:absolute;	}
+
+
+.workCard .circles  {	background-color: @altColor3;	}
+.workCard .circleIco:after  {	content: "\002f"; .iconType(); display:block; line-height:2em; font-size:2em; width:2em; height:2em; top:50%; left:50%; margin: -1em 0 0 -1em; position:absolute;	}
+
+.designCard .circles{	background-color: @altColor4;	}
+.designCard .circleIco:after  {	content: "\0024"; .iconType(); display:block; line-height:2em; font-size:2em; width:2em; height:2em; top:50%; left:50%; margin: -1em 0 0 -1em; position:absolute;	}
+
+
+.codeCard .circles  {	background-color: @altColor5;	}
+.codeCard .circleIco:after  {	content: "\0023"; .iconType(); display:block; line-height:2em; font-size:2em; width:2em; height:2em; top:50%; left:50%; margin: -1em 0 0 -1em; position:absolute;	}
+
+.learnCard .circles {	background-color: @altColor6;	}
+.learnCard .circleIco:after  {	content: "\0026"; .iconType(); display:block; line-height:2em; font-size:2em; width:2em; height:2em; top:50%; left:50%; margin: -1em 0 0 -1em; position:absolute;	}
+
+.thinkCard .circles {	background-color: @altColor7;	}
+.thinkCard .circleIco:after  {	content: "\0025"; .iconType(); display:block; line-height:2em; font-size:2em; width:2em; height:2em; top:50%; left:50%; margin: -1em 0 0 -1em; position:absolute;	}
+
+.createCard .circles{	background-color: @altColor8;	}
+.createCard .circleIco:after  {	content: "\002e"; .iconType(); display:block; line-height:2em; font-size:2em; width:2em; height:2em; top:50%; left:50%; margin: -1em 0 0 -1em; position:absolute;	}
+
+.sailCard .circles  {	background-color: @altColor9;	}
+.sailCard .circleIco:after  {	content: "\0022"; .iconType(); display:block; line-height:2em; font-size:2em; width:2em; height:2em; top:50%; left:50%; margin: -1em 0 0 -1em; position:absolute;	}
+
+.enjoyCard .circles {	background-color: @altColor10;	}
+.enjoyCard .circleIco:after  {	content: "\0027"; .iconType(); display:block; line-height:2em; font-size:2em; width:2em; height:2em; top:50%; left:50%; margin: -1em 0 0 -1em; position:absolute;	}
+
+.likeCard .circles  {	background-color: @altColor11;	}
+.likeCard .circleIco:after  {	content: "\0030"; .iconType(); display:block; line-height:2em; font-size:2em; width:2em; height:2em; top:50%; left:50%; margin: -1em 0 0 -1em; position:absolute;	}
+
+.mainCardAlt .circleIco:after  {	content: "\002c"; .iconType(); display:block; line-height:2em; font-size:2em; width:2em; height:2em; top:50%; left:50%; margin: -1em 0 0 -1em; position:absolute;	}
+
+#cardHolder section:nth-child(13) .circles {	background-color: @altColor12;	}
+
+
+
+.line {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	width:18rem;
+	position: relative;
+	margin-left: 4rem;
+	display: block;
+	border-bottom: 0.25rem solid #000;
+}
+
+.firstLine {
+	margin-bottom: 0.5rem;
+	letter-spacing: 0.05rem;
+	font-size:2.04rem;
+}
+.secondLine {
+font-size: 1.9rem;
+	letter-spacing: 1px;
+}
+
+.email {
+	font-size: 2.2rem;
+	letter-spacing: 1px;
+
+}
+
+
+/*END FRONT FACE*/
+
+
+/*BACK FACE*/
+
+.line3 {
+	letter-spacing: 1px;
+}
+
+.line4 {
+	letter-spacing: 3px;
+	font-size:23px;
+	font-size: 2.4rem!important;
+	margin-top: 0.5rem;
+}
+
+.web {
+	font-size: 2.4rem;
+	letter-spacing: 2px;
+}
+
+
+
+/*END BACK FACE*/
+
+/*NAV*/
+
+.mainNav {
+	
+	position: relative;
+	width: 100%;
+	text-align: center;
+
+}
+
+
+.flipper {
+	display: none;
+}
+
+
+/*'EXTREME TYPOGRAPHY'*/
+
+.massive {
+	font-size: 7rem;
+}
+
+
+.aboutTitle {
+	padding-top: 0.85em;
+	text-align: left;
+	padding-left: 0.5em;
+	padding-right: 1em;
+
+}
+
+.aboutTitle .word1 {
+	font-size: 6rem;
+	display: block;
+	line-height: 1em;	
+	.altType();
+	font-weight: bold;
+		
+	
+	
+}
+.aboutTitle .word2 {
+	display: block;
+	font-size: 3rem;
+	line-height: 1em;
+	.mainType();
+	
+}
+
+.small {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	font-size: 2rem;
+	text-align: left;
+	
+}
+
+.medium {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	font-size: 2.5rem;
+	text-align: left;
+		
+	
+}
+
+.whatTitle .word5 {
+	display: block;
+	font-size: 10rem;
+	line-height: 1.5em;
+	.altType();
+	font-weight: bold;
+}
+
+.workTitle {
+	text-align: left;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+
+.workTitle .word1 {
+	font-size: 5rem;
+	.altType();
+	font-weight: bold;
+	
+}
+.workTitle .word2 {
+	font-size: 6rem;
+	display: block;
+	line-height: 1em;
+	.altType();
+	font-weight: bold;
+}
+
+.helTitle {
+	padding-left: 1em;
+	padding-right: 1em;
+	text-align: left;
+}
+
+.helTitle .word1 {
+	font-weight: bold;
+	font-size: 5rem;
+	.altType();
+}
+.helTitle .word2{
+	font-size: 6rem;
+	display: block;
+	line-height: 1em;
+	margin-left: -0.04em;
+	.altType();
+	font-weight: bold;
+	
+}
+.endCard {
+text-align: left;
+	width: 26rem;
+	height: 36rem;
+	position: relative;
+	// left:50%;
+	// margin-left: -13rem;
+	// margin-bottom: 4rem;
+	margin:0 auto;
+
+.front {
+	display: none;
+}
+
+	.back { 
+
+
+
+		display: block;
+
+.circles {
+		background-image: url(../img/Me_thumb.jpg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		position: absolute;
+		display: block;
+		overflow: hidden;
+	}
+
+	}
+}
+
+.thisIsTheEnd {
+.mainType();
+font-weight:lighter;
+position: relative;
+		
+
+		.massive {
+			margin-top: 0.5em;
+			.altType();
+			font-weight:bold;
+
+			text-align: left;		
+			margin-bottom: 0.5em;
+			font-size:2.2rem;
+			
+
+			
+		
+		}
+
+		h2 {
+			.altType();
+			font-size:2rem;
+		margin-top: 2em;
+			font-weight:lighter;
+			padding-bottom:2em;
+		}
+
+
+
+
+
+		
+}
+
+
+
+
+
+.navB { display: none;}
+
+
+
+// SOCIAL STUFF 
+
+.socialStuff {margin-left: 1em;
+				width: 100%;
+padding-bottom:4em;
+	text-align: left;
+a {
+	vertical-align: top;
+font-size:1.6rem;
+text-align: left;
+display: inline-block;
+width:7.1em;
+
+
+		margin-bottom: 2.5em;
+		position: relative;
+
+
+		
+
+
+}
+
+
+.ico {
+position: absolute;
+left:-0.75em;
+top: -0.25em;
+font-size:2.4rem;
+	.iconType();
+	
+}
+
+.socText {
+
+//padding-left: 2em;
+	.altType();
+	font-size:1.4rem;
+	font-weight:bold;
+	margin-left: 0.75em;
+
+
+}
+
+
+}
+
+
+
+// *////////////////////////
+// *////////////////////////
+// *////////////////////////
+// *////////////////////////
+// *////////////////////////
+// *////////////////////////
+// *////////////////////////
+// *////////////////////////
+// *////////////////////////
+// * END OF MOBILE FIRST 
+// *////////////////////////
+// *////////////////////////
+// *////////////////////////
+// *////////////////////////
+// *////////////////////////
+// *////////////////////////
+// *////////////////////////
+// *////////////////////////
+
+
+@media only screen and (min-width : 46em) {
+
+
+
+
+html {
+	background-color: darken(#fff,4%);
+}
+body {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: white;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+		
+body.hideScroll {
+	overflow-x: hidden;
+}
+		
+	
+
+
+		
+.panel {
+	.boxShadow(none);
+	position: absolute;
+	height: 30em;
+	width: 26em;
+	display: block;
+/*	top: 50%; 
+	margin-top: -13em;*/
+	left: 50%;
+	top: 0;
+	margin-left: -13em;
+	
+	.easeIt(all @baseSpeed @baseEase);
+}
+
+
+.endCard {
+.boxShadow(none);
+
+	position: absolute;
+	height: 30em;
+	width: 26em;
+	display: block;
+/*	top: 50%; 
+	margin-top: -13em;*/
+	left: 50%;
+	top: 0;
+	margin-left: -13em;
+	
+	.easeIt(all @baseSpeed @baseEase);
+.logoBox {
+		padding: 0.25em;
+		background-color: white;
+		width:5em;
+		height:5em;
+
+		margin-left: -3em;
+		left:50%;
+		top:0;
+		border-radius:50%;
+		margin-top:2em;
+	}
+
+
+
+.circles { opacity: 0.2}
+
+.front {
+	display: block;
+}
+}
+
+
+.mePic {
+	width:100%;
+
+
+}
+
+.mainCard {
+z-index:30;
+
+}
+
+
+
+
+.mainCard.init {
+
+//	.easeIt(all (@baseSpeed * 2) @altEase);
+	.delayIt(@baseSpeed);	
+}
+
+
+#cardHolder {
+	display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+ margin-top: -46em;
+ top: 6em;
+
+
+
+}
+#cardHolder.init {
+margin-top: 0em;
+	.easeIt(all (@baseSpeed * 2) @altEase);
+	.delayIt(@baseSpeed);
+}
+
+
+
+
+.otherCard {
+	opacity: 0;
+
+	z-index: 21;
+	.easeIt(all (@baseSpeed * 2) @altEase);
+}
+
+
+
+.panel.mason {
+	opacity:1;
+	position: absolute;
+	.easeIt(all (@baseSpeed * 2) @altEase);
+}
+
+.endCard.mason {
+	opacity:1;
+	position: absolute;
+	.easeIt(all (@baseSpeed * 2) @altEase);
+}
+
+
+.panel .bar {
+	display: block;
+	position: absolute;
+	height: 0.5em;
+	width: 0;
+	top: 86%;
+	left: 14em;
+	//background-color: @baseColor;
+	background-color: rgba(205,205,205,0.5);
+	margin-left: 0%;
+	z-index:-5;
+	.easeIt(all 0.5s @altEase);
+	//.boxShadow(0 0 10px @baseColor);
+}
+
+.bar:after {
+	content: "";
+	display: block;
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	height: 0.25em;
+	top: 0.15em;
+	z-index: -6;
+	//.boxShadow(inset 0 0 2px rgba(122, 210, 208, 0.42));
+}
+
+
+.beam {
+	display: block;
+	position: absolute;
+	width:0.5em;
+	height:0em;
+	background-color:rgba(205,205,205,0.5);
+	bottom:2em;
+	left:50%;
+	margin-left: -0.25em;
+
+	z-index:-100;
+	padding-top: 0em;
+
+}
+.beam:after {
+
+	width:	50%;
+	content:"";
+	height: 100%;
+	position: absolute;
+	left:50%;
+	display: block;
+	margin-left: -25%;
+	background-color: white;
+	bottom:0;
+}
+
+
+
+
+
+/**/
+.mainCard.mason { 
+	margin-left: -37em;
+	.easeIt(all @baseSpeed @baseEase);
+	.delayIt(@baseSpeed);
+	
+	.bar {
+	 // background-color: @baseColor;
+	padding-right: 22em;	
+	.easeIt(padding (@baseSpeed * 2) @baseEase);
+	.delayIt(@baseSpeed * 2);
+	//.boxShadow(0 0 10px @baseColor)
+	}
+
+	.bar:after {	
+	.boxShadow(inset 0 0 2px @baseColor)
+	}
+}
+
+.aboutCard.mason { 
+	margin-left: -13em;
+	.easeIt(all (@baseSpeed * 1.50) @baseEase);
+
+	.bar {
+	 // background-color: @altColor1;
+	padding-right: 18em;	
+	.easeIt(padding (@baseSpeed * 2) @baseEase);
+	.delayIt(@baseSpeed * 4);
+	//.boxShadow(0 0 10px @altColor1)
+	}
+
+	.bar:after {	
+	.boxShadow(inset 0 0 2px @altColor1)
+	}
+}
+
+
+
+.doCard.mason { 
+margin-left: 7em;
+	.easeIt(all (@baseSpeed * 2) @baseEase);
+	.bar {
+	 // background-color: @altColor2;
+	padding-right: 18em;	
+	.easeIt(padding (@baseSpeed * 2) @baseEase);
+	.delayIt(@baseSpeed * 6);
+	//.boxShadow(0 0 10px @altColor2);
+	}
+
+	.bar:after {	
+	.boxShadow(inset 0 0 2px @altColor2);
+	}
+}
+
+
+.workCard.mason { 
+	margin-left: 27em;
+	.easeIt(all (@baseSpeed * 2) @baseEase);
+	.bar {
+	 // background-color: @altColor3;
+	padding-right: 18em;	
+	.easeIt(padding (@baseSpeed * 2) @baseEase);
+	.delayIt(@baseSpeed * 8);
+	//.boxShadow(0 0 10px @altColor3);
+	}
+
+	.bar:after {	
+	.boxShadow(inset 0 0 2px @altColor3);
+	}
+}
+.designCard.mason { 
+	margin-left: 47em;
+	.easeIt(all (@baseSpeed * 2) @baseEase);
+	.bar {
+	 // background-color: @altColor4;
+	padding-right: 18em;	
+	.easeIt(padding (@baseSpeed * 2) @baseEase);
+	.delayIt(@baseSpeed * 10);
+	//.boxShadow(0 0 10px @altColor4);
+	}
+
+	.bar:after {	
+	.boxShadow(inset 0 0 2px @altColor4);
+	}
+}
+.codeCard.mason { 
+	margin-left: 67em;
+	.easeIt(all (@baseSpeed * 2) @baseEase);
+	.bar {
+	 // background-color: @altColor5;
+	padding-right: 18em;	
+	.easeIt(padding (@baseSpeed * 2) @baseEase);
+	.delayIt(@baseSpeed * 12);
+	//.boxShadow(0 0 10px @altColor5);
+	}
+
+	.bar:after {	
+	.boxShadow(inset 0 0 2px @altColor5);
+	}
+}
+.learnCard.mason {
+		margin-left: 87em;
+	.easeIt(all (@baseSpeed * 2) @baseEase);
+	.bar {
+	 // background-color: @altColor6;
+	padding-right: 18em;	
+	.easeIt(padding (@baseSpeed * 2) @baseEase);
+	.delayIt(@baseSpeed * 14);
+	//.boxShadow(0 0 10px @altColor6);
+	}
+
+	.bar:after {	
+	.boxShadow(inset 0 0 2px @altColor6);
+	}
+}
+.thinkCard.mason { 
+		margin-left: 107em;
+	.easeIt(all (@baseSpeed * 2) @baseEase);
+	.bar {
+	 // background-color: @altColor7;
+	padding-right: 18em;	
+	.easeIt(padding (@baseSpeed * 2) @baseEase);
+	.delayIt(@baseSpeed * 16);
+	//.boxShadow(0 0 10px @altColor7);
+	}
+
+	.bar:after {	
+	.boxShadow(inset 0 0 2px @altColor7);
+	}
+}
+.createCard.mason { 
+	margin-left: 127em;
+	.easeIt(all (@baseSpeed * 2) @baseEase);
+	.bar {
+	 // background-color: @altColor8;
+	padding-right: 18em;	
+	.easeIt(padding (@baseSpeed * 2) @baseEase);
+	.delayIt(@baseSpeed * 18);
+	//.boxShadow(0 0 10px @altColor8);
+	}
+
+	.bar:after {	
+	.boxShadow(inset 0 0 2px @altColor8);
+	}
+}
+
+.sailCard.mason { 
+	margin-left: 147em;
+	.easeIt(all (@baseSpeed * 2) @baseEase);
+	.bar {
+	 // background-color: @altColor9;
+	padding-right: 18em;	
+	.easeIt(padding (@baseSpeed * 2) @baseEase);
+	.delayIt(@baseSpeed * 20);
+	//.boxShadow(0 0 10px @altColor9);
+	}
+
+	.bar:after {	
+	.boxShadow(inset 0 0 2px @altColor9);
+	}
+}
+
+.enjoyCard.mason {
+	margin-left: 167em;
+	.easeIt(all (@baseSpeed * 2) @baseEase);
+	.bar {
+	// background-color: @altColor10;
+	padding-right: 18em;	
+	.easeIt(padding (@baseSpeed * 2) @baseEase);
+	.delayIt(@baseSpeed * 22);
+	//.boxShadow(0 0 10px @altColor10);
+	}
+
+	.bar:after {	
+	.boxShadow(inset 0 0 2px @altColor10);
+	}
+}
+
+.likeCard.mason { 
+		margin-left: 187em;
+	.easeIt(all (@baseSpeed * 2) @baseEase);
+	.bar {
+	// background-color: @altColor11;
+	padding-right: 18em;	
+	.easeIt(all (@baseSpeed * 2) @baseEase);
+	.delayIt(@baseSpeed * 24);
+	//.boxShadow(0 0 10px @altColor11);
+	}
+
+	.bar:after {	
+	.boxShadow(inset 0 0 2px @altColor11);
+	}
+}
+
+.mainCardAlt.mason { 
+
+		margin-left: 207em;
+	.easeIt(all (@baseSpeed * 2) @baseEase);
+	.bar {
+	//background-color: @altColor12;
+	padding-right: 81em;	
+	.easeIt(all (@baseSpeed * 4) @baseEase);
+	.delayIt(@baseSpeed * 26);
+	// .boxShadow(0 0 10px @altColor12);
+	}
+
+	.bar:after {	
+	.boxShadow(inset 0 0 2px @altColor12);
+	}
+}
+.endCard.mason { 
+
+		margin-left: 290em;
+	.easeIt(all (@baseSpeed * 2) @baseEase);
+	.bar {
+	 // background-color: @altColor12;
+	padding-right: 18em;	
+	.easeIt(all (@baseSpeed * 8) @baseEase);
+	.delayIt(@baseSpeed * 30);
+	// .boxShadow(0 0 10px @altColor12);
+	}
+
+	.bar:after {	
+	.boxShadow(inset 0 0 2px @altColor12);
+	}
+	.beam {
+		// .boxShadow(0 0 10px @altColor12);
+	padding-top: 16.3em;
+		//padding-top: 20px;
+		.easeIt(all (@baseSpeed * 2) @baseEase);
+	.delayIt(@baseSpeed * 30);
+	}
+	.beam:after {	
+	 .boxShadow(inset 0 0 2px @altColor12);
+	}
+.logoBox {
+	z-index:50;
+
+	
+	opacity:1;
+
+	.boxShadow(0 0 500px 50px @baseColor);
+.easeIt(all (@baseSpeed * 4) @baseEase);
+	.delayIt(@baseSpeed * 32.5);
+
+}
+	.circles {opacity:1;
+			.easeIt(all (@baseSpeed) @baseEase);
+		.delayIt(@baseSpeed * 32);
+		.boxShadow(~"inset 1px 0px 5px rgba(255,255,255,0.5),0 0 2px white");
+
+	}
+
+}
+
+
+.endCard .back .logoBox {
+	z-index:40;
+	display: block;
+	margin-top: -5.5em;
+	opacity:0;
+		//	.delayIt(@baseSpeed * 2);
+		.easeIt(all @baseSpeed / 4 @baseEase);
+}
+.endCard.flip {
+
+
+
+.back .logoBox {
+
+	opacity:1;
+		.delayIt(0);
+		.easeIt(all 0 @baseEase);
+}
+
+
+
+}
+
+.mainCard .card {
+ 	z-index:30;
+ 	position: absolute;
+
+}
+
+.otherCard .card {
+	.boxShadow(none);
+
+	position: absolute;	
+}
+
+.otherCard.mason .card {
+	.boxShadow(0 0 15px rgba(0, 0, 0, 0.28));
+}
+
+.panel .front {
+	.doThreeDee ();
+}
+
+.panel.flip .front {
+	.doThreeDeeOp();
+}
+
+.panel .back {
+	.doThreeDeeBack();
+}
+
+.panel.flip .back {
+	
+	.doThreeDeeBackOp();
+}
+
+
+
+
+/*FLIPPER*/
+
+
+.flipper {
+	display: block;
+	position: absolute;
+	top: 20em;
+	background-color: white;
+	.boxShadow(0 0 10px fade(darken(@baseColor, 60%), 50%));
+	left: 50%;
+	width: 2em;
+	height: 2em;
+
+	border-radius: 50%;
+	line-height: 2em;
+	margin-top: 0em;
+	z-index: -10;
+	text-align: center;
+	margin-left: -1em;
+
+	.ico {
+		.easeIt(all (@baseSpeed) @baseEase);
+		color: darken(white, 20%);
+.iconType();
+font-size:1.3em;
+
+	}
+}
+
+.flipper:hover {
+
+	.ico {
+		color: darken(white, 50%);
+		.easeIt(all (@baseSpeed / 2) @baseEase);
+		text-shadow: 0 -1px 0px rgba(100,100,100,0.1);
+	}
+}
+
+
+.flipper:before {
+	content: "";
+	display: block;
+
+	position: absolute;
+	width: 0.5em;
+	height: 1.25em;
+	top: -1.25em;
+	left: 50%;
+	margin-left: -0.25em;
+z-index:-30;
+	background-color: rgba(205,205,205,0.7);
+	//.boxShadow(0 0 10px fade(darken(@baseColor, 60%), 50%));
+	
+	}
+.flipper:after {
+	content: "";
+	display: block;
+	z-index:-30;
+	position: absolute;
+	width: 0.25em;
+	height: 1.3em;
+	top: -1.3em;
+	left: 50%;
+	margin-left: -0.125em;
+.boxShadow( inset 0 0px 10px fade(lighten(@baseColor, 60%), 50%));
+	background-color: white;
+
+
+}
+
+
+
+
+#cardHolder.init .mainCard .flipper {
+	margin-top: 5em;
+	.easeIt(all @baseSpeed @altEase);
+	.delayIt(@baseSpeed * 3);
+
+
+}
+
+.otherCard .flipper {
+	opacity:0;
+	.delayIt(@baseSpeed * 6);
+}
+.otherCard.mason .flipper {
+	opacity:1;
+	margin-top: 5em;
+	.easeIt(all 0 @altEase);
+	.delayIt(@baseSpeed / 10);
+}
+
+.mainCard .flipper:active { .boxShadow(inset 0 0 4px darken(@baseColor, 30%)); .ico{ color: @baseColor; text-shadow: 0 0 8px @baseColor;} }
+ .mainCard .flipper:active:before { 	background-color: @baseColor;   }
+ .mainCard .flipper:after { 	  .boxShadow(inset 0 0 2px @baseColor);}
+
+.aboutCard .flipper:active:before {	background-color: @altColor1; }
+.aboutCard .flipper:after {		.boxShadow(inset 0 0 2px @altColor1);}
+.aboutCard .flipper:active { .boxShadow(inset 0 0 4px darken(@altColor1, 30%)); .ico{ color: @altColor1; text-shadow: 0 0 8px @altColor1;} }
+
+.doCard .flipper:active:before {		background-color: @altColor2; }
+.doCard .flipper:active { .boxShadow(inset 0 0 4px darken(@altColor2, 30%)); .ico{ color: @altColor2; text-shadow: 0 0 8px @altColor2;} }
+.doCard .flipper:after {		.boxShadow(inset 0 0 2px @altColor2);}
+
+.workCard .flipper:active:before {		background-color: @altColor3;  }
+.workCard .flipper:after {		.boxShadow(inset 0 0 2px @altColor3);}
+.workCard .flipper:active { .boxShadow(inset 0 0 4px darken(@altColor3, 30%)); .ico{ color: @altColor3; text-shadow: 0 0 8px @altColor3;} }
+
+.designCard .flipper:active:before {	background-color: @altColor4; }
+.designCard .flipper:after {		.boxShadow(inset 0 0 2px @altColor4);}
+.designCard .flipper:active { .boxShadow(inset 0 0 4px darken(@altColor4, 30%)); .ico{ color: @altColor4; text-shadow: 0 0 8px @altColor4;} }
+
+.codeCard .flipper:active:before {		background-color: @altColor5; }
+.codeCard .flipper:after {		.boxShadow(inset 0 0 2px @altColor5);}
+.codeCard .flipper:active { .boxShadow(inset 0 0 4px darken(@altColor5, 30%)); .ico{ color: @altColor5; text-shadow: 0 0 8px @altColor5;} }
+
+.learnCard .flipper:active:before {	background-color: @altColor6; }
+.learnCard .flipper:after {		.boxShadow(inset 0 0 2px @altColor6);}
+.learnCard .flipper:active { .boxShadow(inset 0 0 4px darken(@altColor6, 30%)); .ico{ color: @altColor6; text-shadow: 0 0 8px @altColor6;} }
+
+.thinkCard .flipper:active:before {	background-color: @altColor7; }
+.thinkCard .flipper:after {		.boxShadow(inset 0 0 2px @altColor7);}
+.thinkCard .flipper:active { .boxShadow(inset 0 0 4px darken(@altColor7, 30%)); .ico{ color: @altColor7; text-shadow: 0 0 8px @altColor7;} }
+
+.createCard .flipper:active:before {	background-color: @altColor8; }
+.createCard .flipper:after {		.boxShadow(inset 0 0 2px @altColor8);}
+.createCard .flipper:active { .boxShadow(inset 0 0 4px darken(@altColor8, 30%)); .ico{ color: @altColor8; text-shadow: 0 0 8px @altColor8;} }
+
+.sailCard .flipper:active:before {		background-color: @altColor9; }
+.sailCard .flipper:after {		.boxShadow(inset 0 0 2px @altColor9);}
+.sailCard .flipper:active { .boxShadow(inset 0 0 4px darken(@altColor9, 30%)); .ico{ color: @altColor9; text-shadow: 0 0 8px @altColor9;} }
+
+.enjoyCard .flipper:active:before {	background-color: @altColor10; }
+.enjoyCard .flipper:after {		.boxShadow(inset 0 0 2px @altColor10);}
+.enjoyCard .flipper:active { .boxShadow(inset 0 0 4px darken(@altColor10, 30%)); .ico{ color: @altColor10; text-shadow: 0 0 8px @altColor10;} }
+
+.likeCard .flipper:active:before {		background-color: @altColor11; }
+.likeCard .flipper:after {		.boxShadow(inset 0 0 2px @altColor11);}
+.likeCard .flipper:active { .boxShadow(inset 0 0 4px darken(@altColor11, 30%)); .ico{ color: @altColor11; text-shadow: 0 0 8px @altColor11;} }
+
+.mainCardAlt .flipper:active:before {	background-color: @altColor12; }
+.mainCardAlt .flipper:after {		.boxShadow(inset 0 0 2px @altColor12);}
+.mainCardAlt .flipper:active { .boxShadow(inset 0 0 4px darken(@altColor12, 30%)); .ico{ color: @altColor12; text-shadow: 0 0 8px @altColor12;} }
+
+
+/*END FLIPPER*/
+
+.endCard { 
+.flipper:before {
+	display: none;
+}
+.flipper:after {
+	display: none;
+}
+
+}
+
+
+
+
+
+
+/*NAV BIG SCREEN*/
+
+
+
+.mainNav {
+	z-index:50;
+	
+	position: fixed;
+	top:0;
+	display: block;
+	height: 6em;
+	margin-top: 60em;
+	
+	width: 10em;
+	left:50%;
+	margin-left: -5em;
+	.easeIt(all @baseSpeed @altEase);
+}
+
+
+
+.mainNav.init {
+	margin-top: 36em;
+	.easeIt(all (@baseSpeed * 3) @altEase);
+	.delayIt(@baseSpeed);
+}
+
+
+
+.navB {
+	.iconType();
+	.boxShadow(0 0 10px rgba(0,0,0,0.4));
+	margin: 0 auto;
+background-color: white;
+width:1.4em;
+height:1.4em;
+font-size:1.5em;
+line-height:1.4em;
+display: block;
+border-radius:50%;
+color:darken(white,20%);
+.easeIt(all (@baseSpeed * 4) @altEase);
+span {
+display: block;
+width:10em;
+margin:0 auto;
+position: absolute;
+left:50%;
+margin-left: -5em;
+top: 1.5em;
+font-size:0.75em;
+opacity:0;
+margin-top: 0em;
+color: darken(white,5%);
+.easeIt(all (@baseSpeed /2) @altEase);
+.mainType();
+z-index:-5;
+
+}
+
+}
+
+.navLeft {opacity:0;
+	z-index: -50;
+	left:50%;
+	margin-left: -0.7em;
+	top:0;
+	position: absolute;
+	.boxShadow(0 0 5px rgba(0,0,0,0.4));
+	.easeIt(all (@baseSpeed) @altEase);
+}
+.navRight {opacity:0;
+		z-index: -51;
+		right:50%;
+	margin-right: -0.7em;
+	.boxShadow(0 0 5px rgba(0,0,0,0.4));
+	.easeIt(all (@baseSpeed) @altEase);
+	top:0;
+	position: absolute;
+}
+
+.navB:hover {
+
+color: darken(white, 60%);
+.easeIt(all (@baseSpeed / 2) @altEase);
+
+
+span {
+	margin-top: 0.75em;
+
+opacity:1;
+color:darken(white, 50%);
+.easeIt(all (@baseSpeed /2 ) @altEase);
+	.delayIt(@baseSpeed);
+}
+}
+
+
+.mainNav.mason .mainButton {
+.boxShadow(inset 0 0 4px darken(@baseColor, 30%));
+	color: @baseColor;
+	text-shadow: 0 0 8px @baseColor;
+
+	span {
+		opacity:0;
+		.easeIt(all (@baseSpeed /2 ) @altEase);
+	}
+}
+
+.mainNav.mason .navLeft {opacity:1;
+	left:50%;
+	margin-left: -2.8em;
+	top:0;
+	position: absolute;
+}
+.mainNav.mason .navRight {opacity:1;
+		right:50%;
+	margin-right: -2.8em;
+
+	top:0;
+	position: absolute;
+}
+
+.navLeft:active, .navRight:active {
+.boxShadow(inset 0 0 4px darken(@baseColor, 30%));
+	color: @baseColor;
+	text-shadow: 0 0 8px @baseColor;
+
+	span {
+		
+		.easeIt(all (@baseSpeed /2 ) @altEase);
+	}
+}
+
+
+.navB:before {
+	content: "";
+	display: block;
+
+	position: absolute;
+	width: 0.4em;
+	height: 20em;
+	z-index:-1;
+	left: 50%;
+	margin-left: -0.2em;
+margin-top: 1.4em;
+	background-color: @baseColor;
+	.boxShadow(0 0 10px @baseColor);
+	
+	}
+.navB:after {
+	content: "";
+	display: block;	
+	position: absolute;
+	width: 0.2em;
+	height: 20em;
+	left: 50%;
+	top:0;
+	margin-top: 1.4em;
+	margin-left: -0.1em;
+	background-color: white;
+	.boxShadow(inset 0 0 2px @baseColor);
+	opacity: 0.8;
+}
+
+
+
+
+
+.mainNav.init .navB:before {
+
+opacity: 0;
+.easeIt(all (@baseSpeed * 1) @altEase);
+	.delayIt(@baseSpeed * 4);
+
+
+}
+.mainNav.init .navB:after {
+
+opacity: 0;
+.easeIt(all (@baseSpeed * 1) @altEase);
+	.delayIt(@baseSpeed * 4);
+
+
+}
+
+
+
+.thisIsTheEnd {
+.mainType();
+font-weight:lighter;
+opacity:1;
+	position: absolute;
+	left: -50em;
+	top:1em;
+		.easeIt(all (@baseSpeed * 2) @altEase);
+
+		.massive {
+			.easeIt(all (@baseSpeed * 2) @altEase);
+			opacity:0;
+			margin-top: 0.5em;
+			.altType();
+			font-weight:bold;
+			font-size:4rem;
+			width: 19em;
+			margin-bottom: 0.5em;
+		}
+
+		h2 {
+			.easeIt(all (@baseSpeed * 2) @altEase);
+			opacity:0;
+			width: 27em;
+			font-size:2.5rem;
+				margin-top: 1em;
+			font-weight:lighter;
+		}
+
+
+
+
+
+
+}
+
+
+
+
+.endTitle {
+	font-weight:normal;
+	.word7 {
+
+		.mainType();
+		font-weight:normal;
+
+
+	}
+}
+
+
+.socialStuff { 
+	margin-left:1.25em;
+	margin-top:-1.5em;
+	width: 50em;
+
+a {
+	width:9em;
+
+margin-right: 0em;
+
+ float:left;
+ .easeIt(all (@baseSpeed /4) @altEase);
+
+
+}
+	.ico {
+text-align: center;
+vertical-align: center;
+		font-size:2.4rem;
+		width:1.4em;
+height:1.4em;
+line-height:1.4em;
+
+top:-0.4em;
+background-color:white;
+color:darken(white,20%);
+.boxShadow(0 0  10px rgba(0,0,0,0.4));
+
+
+border-radius:50%;
+	}
+	.socText {
+		position:relative;
+		z-index:-1;
+margin-left: -1em;
+		opacity:0;
+top:-0.1em;
+		.mainType();
+		vertical-align: middle;
+		font-size:1.6rem;
+		font-weight:normal;
+		.easeIt(all (@baseSpeed /4) @altEase);
+		
+	}
+
+	a:hover {
+		//margin-right: -1em;
+	.ico {
+.easeIt(all (@baseSpeed /2) @altEase);
+		color:darken(white,60%);
+	}
+
+		.easeIt(all (@baseSpeed /2) @altEase);
+
+		.socText {
+		margin-left: 1.5em;
+		.easeIt(all (@baseSpeed /2 ) @altEase);
+		opacity:1;
+
+		}
+	}
+}
+
+
+.thisIsTheEnd.not {
+.massive{
+opacity:1;
+	.easeIt(all (@baseSpeed * 2) @altEase);
+}
+
+
+h2 {
+	opacity:1;
+	.easeIt(all (@baseSpeed * 4) @altEase);
+.delayIt(@baseSpeed);
+
+}
+}
+
+
+.contTwitter:active{
+
+
+ .ico {
+ 	.boxShadow(inset 0 0 4px spin(@baseColor,30deg));
+
+text-shadow: 0 0 10px spin(@baseColor, 30deg);
+
+	
+}
+}
+.contMail:active{
+
+
+ .ico {
+ 	.boxShadow(inset 0 0 4px spin(@baseColor,180deg));
+
+text-shadow: 0 0 10px spin(@baseColor, 180deg);
+
+	
+}
+}
+.contSkype:active{
+
+
+ .ico {
+ 	.boxShadow(inset 0 0 4px spin(@baseColor,-5deg));
+
+text-shadow: 0 0 10px spin(@baseColor, -5deg);
+
+	
+}
+}
+
+
+
+.thisIsTheEnd .socialStuff {
+
+	opacity:0;
+	margin-top:-1em;
+}
+ .thisIsTheEnd.not .socialStuff {
+
+	opacity:1;
+	margin-top:0em;
+	.easeIt(all (@baseSpeed * 2) @altEase);
+.delayIt(@baseSpeed * 2);
+}
+
+
+
+}
+
+
+
+@media only screen and (min-width : 46em) and (max-height : 40em) {
+
+
+
+#cardHolder.init {
+margin-top: -4em;
+	
+}
+.mainNav.init {
+	margin-top: 32em;
+	.easeIt(all (@baseSpeed * 3) @altEase);
+	.delayIt(@baseSpeed);
+}
+}
+
+@media only screen and (min-width : 46em) and (min-height : 50em) {
+
+
+
+#cardHolder.init {
+margin-top: 6em;
+	
+}
+.mainNav.init {
+	margin-top: 42em;
+	.easeIt(all (@baseSpeed * 3) @altEase);
+	.delayIt(@baseSpeed);
+}
+}
+
+@media only screen and (min-width : 46em) and (max-width : 64em)  {
+
+
+
+
+.thisIsTheEnd {
+.mainType();
+font-weight:lighter;
+opacity:1;
+	position: absolute;
+	left: -20em;
+	top:3em;
+		.easeIt(all (@baseSpeed * 2) @altEase);
+
+		.massive {
+			
+			font-size:2rem;
+			width: 20em;
+			margin-bottom: 0.5em;
+		}
+
+		h2 {
+			.easeIt(all (@baseSpeed * 2) @altEase);
+			opacity:0;
+			width: 20em;
+			font-size:2rem;
+				margin-top: 1em;
+			font-weight:lighter;
+		}
+}
+
+
+.endTitle {
+	font-weight:normal;
+	.word7 {
+
+		.mainType();
+		font-weight:normal;
+
+
+	}
+}
+
+.thisIsTheEnd.not {
+.massive{
+opacity:1;
+	.easeIt(all (@baseSpeed * 2) @altEase);
+}
+
+
+h2 {
+	opacity:1;
+	.easeIt(all (@baseSpeed * 4) @altEase);
+.delayIt(@baseSpeed * 2);
+
+}
+}
+
+
+.socialStuff { 
+	width: 25em;
+
+a {
+	width:8em;
+
+
+
+}
+	.ico {
+color: darken(white,40%);
+	}
+	.socText {
+
+		opacity:1;
+		margin-left:1.5em;
+	}
+	.contCoffee {
+
+	width:8em;
+}
+}
+
+
+
+
+
+}
+
+
+
+
+@media only screen and (min-width : 60em) and (max-width : 68em)  {
+
+.thisIsTheEnd {
+.mainType();
+font-weight:lighter;
+opacity:1;
+	position: absolute;
+	left: -33em;
+	top:2em;
+		.easeIt(all (@baseSpeed * 2) @altEase);
+
+		.massive {
+			
+			font-size:3rem;
+			width: 20em;
+			margin-bottom: 0.5em;
+		}
+
+		h2 {
+			.easeIt(all (@baseSpeed * 2) @altEase);
+			opacity:0;
+			width: 20em;
+			font-size:2.5rem;
+				margin-top: 1em;
+			font-weight:lighter;
+		}
+}
+
+.socialStuff { 
+	width: 50em;
+
+a {
+	width:8em;
+
+
+
+}
+	.ico {
+color: darken(white,40%);
+	}
+	.socText {
+
+		opacity:1;
+		margin-left:1.5em;
+	}
+	.contCoffee {
+
+	width:8em;
+}
+}
+
+}
+
+
+@media only screen and (min-width : 68em) and (max-width : 77em)  {
+
+.thisIsTheEnd {
+.mainType();
+font-weight:lighter;
+opacity:1;
+	position: absolute;
+	left: -40em;
+	top:2em;
+		.easeIt(all (@baseSpeed * 2) @altEase);
+
+		.massive {
+			
+			font-size:3rem;
+			width: 20em;
+			margin-bottom: 0.5em;
+		}
+
+		h2 {
+			.easeIt(all (@baseSpeed * 2) @altEase);
+			opacity:0;
+			width: 20em;
+			font-size:2.5rem;
+				margin-top: 1em;
+			font-weight:lighter;
+		}
+}
+
+}
+
+

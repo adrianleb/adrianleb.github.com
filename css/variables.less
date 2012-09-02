@@ -1,0 +1,256 @@
+// Variables.less
+// Variables to customize the look and feel of Bootstrap
+// -----------------------------------------------------
+@font-face {
+    font-family: 'IcoMoonRegular';
+    src: url('icons-webfont.eot');
+    src: url('icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('icons-webfont.woff') format('woff'),
+         url('icons-webfont.ttf') format('truetype'),
+         url('icons-webfont.svg#IcoMoonRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+// GLOBAL VALUES
+// --------------------------------------------------
+
+
+// Grays
+// -------------------------
+@black:                 #000;
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+@white:                 #fff;
+
+
+// Accent colors
+// -------------------------
+@blue:                  #049cdb;
+@blueDark:              #0064cd;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+
+
+
+.mainType() {
+ font-family: "bebas-neue", sans-serif; }
+.altType(){
+/*font-family: "adelle";	*/
+ font-family: "Helvetica";
+} 
+
+.iconType() {
+	  font-family: 'IcoMoonRegular';
+	  font-weight:normal;
+}
+
+@baseColor: #7ad2d0;
+
+@altColor1:  spin(@baseColor,-30deg);
+@altColor2:  spin(@baseColor,-60deg);
+@altColor3:  spin(@baseColor,-90deg);
+@altColor4:  spin(@baseColor,-120deg);
+@altColor5:  spin(@baseColor,-150deg);
+@altColor6:  spin(@baseColor,-180deg);
+@altColor7:  spin(@baseColor,-210deg);
+@altColor8:  spin(@baseColor,-240deg);
+@altColor9:  spin(@baseColor,-270deg);
+@altColor10: spin(@baseColor,-300deg);
+@altColor11: spin(@baseColor,-330deg);
+@altColor12: spin(@baseColor,-360deg);
+
+
+
+
+
+@baseSpeed: 0.75s;
+@baseEase: ease-in;
+@altEase: ease-out;
+
+
+
+
+.boxShadow(@arguments) {
+    -webkit-box-shadow: @arguments;
+       -moz-box-shadow: @arguments;
+            box-shadow: @arguments;
+}
+
+
+.moveIt(@argument1, @argument2) {
+	  -moz-transform: translate(@argument1, @argument2);
+   -webkit-transform: translate(@argument1, @argument2);
+	   -ms-transform: translate(@argument1, @argument2);
+	    -o-transform: translate(@argument1, @argument2);
+	       transform: translate(@argument1, @argument2);
+}
+
+.easeIt(@arguments){
+
+
+	 -moz-transition: @arguments;
+  -webkit-transition: @arguments;	
+       -o-transition: @arguments;
+	  -ms-transition: @arguments;
+		  transition: @arguments;
+}
+
+
+.delayIt (@arguments) {
+	-moz-transition-delay: @arguments;
+ -webkit-transition-delay: @arguments;
+	  -o-transition-delay: @arguments;
+	 -ms-transition-delay: @arguments;
+	     transition-delay: @arguments;
+}
+
+
+.borderBox {
+  -webkit-box-sizing: border-box; 
+     -moz-box-sizing: border-box; 
+          box-sizing: border-box; 
+}
+
+
+	
+
+
+
+.doThreeDee(){
+	z-index: 31;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	
+	-webkit-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	
+	-webkit-transform: rotateY(0deg);
+		-moz-transform: rotateY(0deg);	
+		-ms-transform: rotateY(0deg);	
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	
+
+		-o-transition: all .4s ease-in-out;
+		-ms-transition: all .4s ease-in-out;
+		-moz-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+		transition: all .4s ease-in-out;
+		
+		}
+		
+		
+.doThreeDeeOp() {
+
+
+	
+	
+	
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+-ms-transform-style: preserve-3d;
+-o-transform-style: preserve-3d;
+transform-style: preserve-3d;
+
+-webkit-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+-o-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+backface-visibility: hidden;
+
+-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);	
+	-ms-transform: rotateY(-180deg);	
+	-o-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+
+-o-transition: all .4s ease-in-out;
+-ms-transition: all .4s ease-in-out;
+-moz-transition: all .4s ease-in-out;
+-webkit-transition: all .4s ease-in-out;
+transition: all .4s ease-in-out;
+
+}
+
+
+.doThreeDeeBack() {
+
+
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+-ms-transform-style: preserve-3d;
+-o-transform-style: preserve-3d;
+transform-style: preserve-3d;
+
+-webkit-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+-o-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+backface-visibility: hidden;
+
+-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);	
+	-ms-transform: rotateY(180deg);	
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+-o-transition: all .4s ease-in-out;
+-ms-transition: all .4s ease-in-out;
+-moz-transition: all .4s ease-in-out;
+-webkit-transition: all .4s ease-in-out;
+transition: all .4s ease-in-out;
+
+
+}
+
+.doThreeDeeBackOp () {
+
+z-index:40;
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+-ms-transform-style: preserve-3d;
+-o-transform-style: preserve-3d;
+transform-style: preserve-3d;
+
+-webkit-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+-o-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+backface-visibility: hidden;
+
+-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);	
+	-ms-transform: rotateY(0deg);	
+	-o-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+-o-transition: all .4s ease-in-out;
+-ms-transition: all .4s ease-in-out;
+-moz-transition: all .4s ease-in-out;
+-webkit-transition: all .4s ease-in-out;
+transition: all .4s ease-in-out;
+
+
+
+
+}
+
