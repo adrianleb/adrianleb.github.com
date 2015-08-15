@@ -426,6 +426,7 @@ a {
 }
 .logoTitle h1{
   font-weight: 600;
+  font-family: "Avenir-Heavy", "Avenir", sans-serif;
   line-height: 1;
   font-size: 2.9rem;
   letter-spacing: 0.25rem;
@@ -502,7 +503,7 @@ a {
   line-height: 1em;
   /*font-family: "adelle";	*/
 
-  font-family: "Helvetica";
+  font-family: "Helvetica-Bold", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .aboutTitle .word2 {
@@ -523,9 +524,10 @@ a {
 .medium {
   padding-left: 1.5em;
   padding-right: 1.5em;
-  font-size: 2.1rem;
+  font-size: 2rem;
   text-align: left;
   line-height: 1.3;
+  letter-spacing: 0.1618rem;
   padding-top: 0.4em;
 }
 .whatTitle .word5 {
@@ -534,7 +536,7 @@ a {
   line-height: 1.5em;
   /*font-family: "adelle";	*/
 
-  font-family: "Helvetica";
+  font-family: "Helvetica-Bold", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .workTitle {
@@ -546,7 +548,7 @@ a {
   font-size: 5rem;
   /*font-family: "adelle";	*/
 
-  font-family: "Helvetica";
+  font-family: "Helvetica-Bold", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .workTitle .word2 {
@@ -555,7 +557,7 @@ a {
   line-height: 1em;
   /*font-family: "adelle";	*/
 
-  font-family: "Helvetica";
+  font-family: "Helvetica-Bold", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .helTitle {
@@ -568,7 +570,7 @@ a {
   font-size: 5rem;
   /*font-family: "adelle";	*/
 
-  font-family: "Helvetica";
+  font-family: "Helvetica-Bold", "Helvetica", sans-serif;
 }
 .helTitle .word2 {
   font-size: 5rem;
@@ -577,7 +579,7 @@ a {
   margin-left: -0.04em;
   /*font-family: "adelle";	*/
 
-  font-family: "Helvetica";
+  font-family: "Helvetica-Bold", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .endCard {
@@ -602,7 +604,7 @@ a {
   overflow: hidden;
 }
 .thisIsTheEnd {
-  font-family: "Avenir", sans-serif;
+  font-family: "Avenir-Light", "Avenir", sans-serif;
   font-weight: lighter;
   position: relative;
 }
@@ -610,7 +612,7 @@ a {
   margin-top: 0.5em;
   /*font-family: "adelle";	*/
 
-  font-family: "Helvetica";
+  font-family: "Helvetica-Bold", "Helvetica", sans-serif;
   font-weight: bold;
   text-align: left;
   margin-bottom: 0.5em;
@@ -619,7 +621,7 @@ a {
 .thisIsTheEnd h2 {
   /*font-family: "adelle";	*/
 
-  font-family: "Helvetica";
+  font-family: "Helvetica-Light", "Helvetica", sans-serif;
   font-size: 2rem;
   margin-top: 2em;
   font-weight: lighter;
@@ -652,7 +654,7 @@ a {
 .socialStuff .socText {
   /*font-family: "adelle";	*/
 
-  font-family: "Helvetica";
+  font-family: "Helvetica-Bold", "Helvetica", sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
   margin-left: 0.75em;
@@ -1685,7 +1687,7 @@ box-shadow: none;
     transition: all 0.75s ease-out;
   }
   .thisIsTheEnd {
-    font-family: "Avenir", sans-serif;
+    font-family: "Avenir-Light", "Avenir", sans-serif;
     font-weight: lighter;
     opacity: 1;
     position: absolute;
@@ -1707,7 +1709,7 @@ box-shadow: none;
     margin-top: 0.5em;
     /*font-family: "adelle";	*/
 
-    font-family: "Helvetica";
+    font-family: "Helvetica-Bold", "Helvetica", sans-serif;
     font-weight: bold;
     font-size: 4rem;
     width: 19em;
