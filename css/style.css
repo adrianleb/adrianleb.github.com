@@ -637,7 +637,7 @@ a {
 .socialStuff a {
   text-align: left;
   display: block;
-  width: 7.1em;
+  width: 10.1em;
   margin-bottom: 1.5rem;
   position: relative;
 }
@@ -656,6 +656,7 @@ a {
   font-size: 1.4rem;
   font-weight: bold;
   margin-left: 0.75em;
+  line-height: 1.4;
   vertical-align: top;
 }
 @media only screen and (min-width: 46em) {
@@ -1868,19 +1869,7 @@ box-shadow: none;
   .socialStuff {
     width: 25em;
   }
-  .socialStuff a {
-    width: 8em;
-  }
-  .socialStuff .ico {
-    color: #999999;
-  }
-  .socialStuff .socText {
-    opacity: 1;
-    margin-left: 1.5em;
-  }
-  .socialStuff .contCoffee {
-    width: 8em;
-  }
+
 }
 @media only screen and (min-width: 60em) and (max-width: 68em) {
   .thisIsTheEnd {
@@ -1915,19 +1904,6 @@ box-shadow: none;
   }
   .socialStuff {
     width: 50em;
-  }
-  .socialStuff a {
-    width: 8em;
-  }
-  .socialStuff .ico {
-    color: #999999;
-  }
-  .socialStuff .socText {
-    opacity: 1;
-    margin-left: 1.5em;
-  }
-  .socialStuff .contCoffee {
-    width: 8em;
   }
 }
 @media only screen and (min-width: 68em) and (max-width: 77em) {
