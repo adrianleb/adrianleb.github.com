@@ -181,7 +181,7 @@ a {
 .logoBox {
   position: relative;
   text-align: center;
-  height: 12rem;
+  height: 13rem;
   padding-top: 4.2em;
 }
 .logoBox img {
@@ -419,10 +419,10 @@ a {
 .logoBox {
 }
 .mainCard .logoBox {
-  padding-bottom: 10rem;
+  padding-bottom: 9rem;
 }
 .mainCard .front .logoBox {
-  padding-bottom: 9.7rem;
+  padding-bottom: 8.7rem;
 }
 .logoTitle h1{
   font-weight: 600;
@@ -571,7 +571,7 @@ a {
   font-family: "Helvetica";
 }
 .helTitle .word2 {
-  font-size: 6rem;
+  font-size: 5rem;
   display: block;
   line-height: 1em;
   margin-left: -0.04em;
